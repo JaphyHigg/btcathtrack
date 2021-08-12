@@ -51,7 +51,7 @@ async function update() {
         console.log("USD: " + usdData);
         // return usdData;
         const btcusd = document.getElementById("btcusd");
-        btcusd.innerText = "1 BTC = $" + usdData;
+        btcusd.innerText = "Current Price: $" + usdData;
     });
 
 
@@ -70,7 +70,7 @@ async function update() {
     eur().then(eurData => {
         console.log("EUR: 💶" + eurData);
         const btceur = document.getElementById("btceur");
-        btceur.innerText = "1 BTC = €" + eurData;
+        btceur.innerText = "Current Price: €" + eurData;
     });
     // getEur();
     // setInterval(getEur, 10000);
@@ -90,7 +90,7 @@ async function update() {
     jpy().then(jpyData => {
         console.log("JPY: 💴" + jpyData);
         const btcjpy = document.getElementById("btcjpy");
-        btcjpy.innerText = "1 BTC = ¥" + jpyData;
+        btcjpy.innerText = "Current Price: ¥" + jpyData;
     });
 
 
@@ -109,7 +109,7 @@ async function update() {
     gbp().then(gbpData => {
         console.log("GBP: " + gbpData);
         const btcgbp = document.getElementById("btcgbp");
-        btcgbp.innerText = "1 BTC = £" + gbpData;
+        btcgbp.innerText = "Current Price: £" + gbpData;
     });
 
     //Aus Dollar
@@ -127,7 +127,7 @@ async function update() {
     aud().then(audData => {
         console.log("AUD: $" + audData);
         const btcaud = document.getElementById("btcaud");
-        btcaud.innerText = "1 BTC = $" + audData;
+        btcaud.innerText = "Current Price: $" + audData;
     });
 
     //Canadian Dollar
@@ -145,7 +145,7 @@ async function update() {
     cad().then(cadData => {
         console.log("CAD: $" + cadData);
         const btccad = document.getElementById("btccad");
-        btccad.innerText = "1 BTC = $" + cadData;
+        btccad.innerText = "Current Price: $" + cadData;
     });
 
     //Swiss Franc
@@ -163,7 +163,7 @@ async function update() {
     chf().then(chfData => {
         console.log("CHF: CHF" + chfData);
         const btcchf = document.getElementById("btcchf");
-        btcchf.innerText = "1 BTC = CHF" + chfData;
+        btcchf.innerText = "Current Price: CHF" + chfData;
     });
 
     //Chinese Yuan (Renminbi)
@@ -181,7 +181,7 @@ async function update() {
     cny().then(cnyData => {
         console.log("CNY: ¥" + cnyData);
         const btccny = document.getElementById("btccny");
-        btccny.innerText = "1 BTC = ¥" + cnyData;
+        btccny.innerText = "Current Price: ¥" + cnyData;
     });
 
     //Hong Kong Dollar
@@ -199,7 +199,7 @@ async function update() {
     hkd().then(hkdData => {
         console.log("HKD: $" + hkdData);
         const btchkd = document.getElementById("btchkd");
-        btchkd.innerText = "1 BTC = $" + hkdData;
+        btchkd.innerText = "Current Price: $" + hkdData;
     });
 
     //New Zealand Dollar
@@ -217,7 +217,7 @@ async function update() {
     nzd().then(nzdData => {
         console.log("NZD: $" + nzdData);
         const btcnzd = document.getElementById("btcnzd");
-        btcnzd.innerText = "1 BTC = $" + nzdData;
+        btcnzd.innerText = "Current Price: $" + nzdData;
     });
     
 
