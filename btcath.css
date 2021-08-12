@@ -7,6 +7,7 @@ body {
   background-color: #837A7C;
   font-family: monospace, sans-serif;
   font-weight: bold;
+  font-size: large;
 }
 
 .container {
@@ -119,9 +120,9 @@ body {
   font-weight: bold;
 }
 .ath {
-  font-size: small;
+  font-size: medium;
 }
 .price {
-  font-size: small;
+  font-size: medium;
   font-weight: bold;
 }
