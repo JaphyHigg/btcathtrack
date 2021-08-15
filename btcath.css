@@ -26,7 +26,7 @@ body {
   grid-gap: 0.2rem;
   border-radius: 5px;
   padding: 10px;
-  background-color: #c98333;
+  background-color: #df8f34;
 }
 
 
@@ -38,6 +38,7 @@ body {
   min-width: 100px;
   border-collapse: collapse;
   border-radius: 5px;
+  font-size: larger;
 
 }
 #placeholder {
@@ -116,14 +117,15 @@ body {
   font-weight: bold;
 }
 .no {
-  background-color: #ffc19e;
+  background-color: #c55a5aea;
   font-weight: bold;
 }
 .ath {
-  font-size: medium;
+  font-size: large;
+  color:rgb(32, 92, 160)
 }
 .price {
-  font-size: medium;
+  font-size: larger;
   font-weight: bold;
   color: purple
 }
