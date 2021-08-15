@@ -4,7 +4,7 @@ body {
   margin: 10px auto 10px auto;
   padding: 10px;
   /* border: 4px double black; */
-  background-color: #837A7C;
+  background-color: #B7CDCC;
   font-family: monospace, sans-serif;
   font-weight: bold;
   font-size: large;
@@ -26,15 +26,15 @@ body {
   grid-gap: 0.2rem;
   border-radius: 5px;
   padding: 10px;
-  background-color: #df8f34;
+  background-color: #6C9674;
 }
 
 
 .currency {
-  border: 3px solid #315A50;
+  border: 3px solid black;
   padding: 10px;
   text-align: center;
-  background-color: #97ADA6;
+  background-color: #C7C4A1;
   min-width: 100px;
   border-collapse: collapse;
   border-radius: 5px;
@@ -113,19 +113,19 @@ body {
   border: 3px solid black;
 }
 .yes {
-  background-color: #caff84;
+  background-color: #86a858f5;
   font-weight: bold;
 }
 .no {
-  background-color: #c55a5aea;
+  background-color: #FCB526;
   font-weight: bold;
 }
 .ath {
   font-size: large;
-  color:rgb(32, 92, 160)
+  color: #49767E
 }
 .price {
   font-size: larger;
   font-weight: bold;
-  color: purple
+  color: #B05D23
 }
