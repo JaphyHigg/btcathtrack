@@ -16,8 +16,12 @@ async function update() {
         function updateContent() {
             const btcusd = document.getElementById("btcusd");
             const usdath = document.getElementById("usdath");
-            const perc = document.getElementById("usdPerc")
-            btcusd.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("usdPerc");
+            btcusd.classList.remove("change");
+            if (btcusd.innerText !== "1 BTC = $" + data[0].current_price.toLocaleString()) {
+                btcusd.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+                btcusd.classList.add("change");
+            };
             usdath.innerText = "ATH: $" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -46,7 +50,11 @@ async function update() {
             const btceur = document.getElementById("btceur");
             const eurath = document.getElementById("eurath");
             const perc = document.getElementById("eurPerc")
-            btceur.innerText = "1 BTC = €" + data[0].current_price.toLocaleString();
+            btceur.classList.remove("change");
+            if (btceur.innerText !== "1 BTC = €" + data[0].current_price.toLocaleString()) {
+                btceur.innerText = "1 BTC = €" + data[0].current_price.toLocaleString();
+                btceur.classList.add("change");
+            };
             eurath.innerText = "ATH: €" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -75,7 +83,11 @@ async function update() {
             const btcjpy = document.getElementById("btcjpy");
             const jpyath = document.getElementById("jpyath");
             const perc = document.getElementById("jpyPerc")
-            btcjpy.innerText = "1 BTC = ¥" + data[0].current_price.toLocaleString();
+            btcjpy.classList.remove("change");
+            if (btcjpy.innerText !== "1 BTC = ¥" + data[0].current_price.toLocaleString()) {
+                btcjpy.innerText = "1 BTC = ¥" + data[0].current_price.toLocaleString();
+                btcjpy.classList.add("change");
+            };
             jpyath.innerText = "ATH: ¥" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -102,10 +114,13 @@ async function update() {
     
         function updateContent() {
             const btcgbp = document.getElementById("btcgbp");
-            const jpyath = document.getElementById("gbpath");
             const perc = document.getElementById("gbpPerc")
             let gbpath = document.getElementById("gbpath");
-            btcgbp.innerText = "1 BTC = £" + data[0].current_price.toLocaleString();
+            btcgbp.classList.remove("change");
+            if (btcgbp.innerText !== "1 BTC = £" + data[0].current_price.toLocaleString()) {
+                btcgbp.innerText = "1 BTC = £" + data[0].current_price.toLocaleString();
+                btcgbp.classList.add("change");
+            }
             gbpath.innerText = "ATH: £" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -134,7 +149,11 @@ async function update() {
             const btcaud = document.getElementById("btcaud");
             const perc = document.getElementById("audPerc")
             let audath = document.getElementById("audath");
-            btcaud.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+            btcaud.classList.remove("change");
+            if (btcaud.innerText !== "1 BTC = $" + data[0].current_price.toLocaleString()) {
+                btcaud.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+                btcaud.classList.add("change");
+            }
             audath.innerText = "ATH: $" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -163,7 +182,11 @@ async function update() {
             const btccad = document.getElementById("btccad");
             let cadath = document.getElementById("cadath");
             const perc = document.getElementById("cadPerc")
-            btccad.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+            btccad.classList.remove("change");
+            if (btccad.innerText !== "1 BTC = $" + data[0].current_price.toLocaleString()) {
+                btccad.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+                btccad.classList.add("change");
+            };
             cadath.innerText = "ATH: $" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -192,7 +215,11 @@ async function update() {
             const btcchf = document.getElementById("btcchf");
             let chfath = document.getElementById("chfath");
             const perc = document.getElementById("chfPerc")
-            btcchf.innerText = "1 BTC = CHF" + data[0].current_price.toLocaleString();
+            btcchf.classList.remove("change");
+            if (btcchf.innerText !== "1 BTC = CHF" + data[0].current_price.toLocaleString()) {
+                btcchf.innerText = "1 BTC = CHF" + data[0].current_price.toLocaleString();
+                btcchf.classList.add("change");
+            };
             chfath.innerText = "ATH: CHF" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -221,7 +248,11 @@ async function update() {
             const btccny = document.getElementById("btccny");
             let cnyath = document.getElementById("cnyath");
             const perc = document.getElementById("cnyPerc")
-            btccny.innerText = "1 BTC = ¥" + data[0].current_price.toLocaleString();
+            btccny.classList.remove("change");
+            if (btccny.innerText !== "1 BTC = ¥" + data[0].current_price.toLocaleString()) {
+                btccny.innerText = "1 BTC = ¥" + data[0].current_price.toLocaleString();
+                btccny.classList.add("change");
+            };
             cnyath.innerText = "ATH: ¥" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -250,8 +281,12 @@ async function update() {
         function updateContent() {
             const btchkd = document.getElementById("btchkd");
             let hkdath = document.getElementById("hkdath");
-            const perc = document.getElementById("hkdPerc")
-            btchkd.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("hkdPerc");
+            btchkd.classList.remove("change");
+            if (btchkd.innerText !== "1 BTC = $" + data[0].current_price.toLocaleString()) {
+                btchkd.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+                btchkd.classList.add("change");
+            };
             hkdath.innerText = "ATH: $" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -280,7 +315,11 @@ async function update() {
             const btcnzd = document.getElementById("btcnzd");
             let nzdath = document.getElementById("nzdath");
             const perc = document.getElementById("nzdPerc")
-            btcnzd.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+            btcnzd.classList.remove("change");
+            if (btcnzd.innerText !== "1 BTC = $" + data[0].current_price.toLocaleString()) {
+                btcnzd.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+                btcnzd.classList.add("change");
+            };
             nzdath.innerText = "ATH: $" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -310,7 +349,11 @@ async function update() {
             const btcsek = document.getElementById("btcsek");
             let sekath = document.getElementById("sekath");
             const perc = document.getElementById("sekPerc")
-            btcsek.innerText = "1 BTC = KR" + data[0].current_price.toLocaleString();
+            btcsek.classList.remove("change");
+            if (btcsek.innerText !== "1 BTC = KR" + data[0].current_price.toLocaleString()) {
+                btcsek.innerText = "1 BTC = KR" + data[0].current_price.toLocaleString();
+                btcsek.classList.add("change");
+            };
             sekath.innerText = "ATH: KR" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -338,8 +381,12 @@ async function update() {
         function updateContent() {
             const btckrw = document.getElementById("btckrw");
             let krwath = document.getElementById("krwath");
-            const perc = document.getElementById("krwPerc")
-            btckrw.innerText = "1 BTC = ₩" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("krwPerc");
+            btckrw.classList.remove("change");
+            if (btckrw.innerText !== "1 BTC = ₩" + data[0].current_price.toLocaleString()) {
+                btckrw.innerText = "1 BTC = ₩" + data[0].current_price.toLocaleString();
+                btckrw.classList.add("change");
+            };
             krwath.innerText = "ATH: ₩" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -368,7 +415,11 @@ async function update() {
             const btcsgd = document.getElementById("btcsgd");
             let sgdath = document.getElementById("sgdath");
             const perc = document.getElementById("sgdPerc")
-            btcsgd.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+            btcsgd.classList.remove("change");
+            if (btcsgd.innerText !== "1 BTC = $" + data[0].current_price.toLocaleString()) {
+                btcsgd.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+                btcsgd.classList.add("change");
+            };
             sgdath.innerText = "ATH: $" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -396,8 +447,12 @@ async function update() {
         function updateContent() {
             const btcnok = document.getElementById("btcnok");
             let nokath = document.getElementById("nokath");
-            const perc = document.getElementById("nokPerc")
-            btcnok.innerText = "1 BTC = KR" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("nokPerc");
+            btcnok.classList.remove("change");
+            if (btcnok.innerText !== "1 BTC = KR" + data[0].current_price.toLocaleString()) {
+                btcnok.innerText = "1 BTC = KR" + data[0].current_price.toLocaleString();
+                btcnok.classList.add("change");
+            };
             nokath.innerText = "ATH: KR" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -425,8 +480,12 @@ async function update() {
         function updateContent() {
             const btcmxn = document.getElementById("btcmxn");
             let mxnath = document.getElementById("mxnath");
-            const perc = document.getElementById("mxnPerc")
-            btcmxn.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("mxnPerc");
+            btcmxn.classList.remove("change");
+            if (btcmxn.innerText !== "1 BTC = $" + data[0].current_price.toLocaleString()) {
+                btcmxn.innerText = "1 BTC = $" + data[0].current_price.toLocaleString();
+                btcmxn.classList.add("change");
+            };
             mxnath.innerText = "ATH: $" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -454,8 +513,12 @@ async function update() {
         function updateContent() {
             const btcinr = document.getElementById("btcinr");
             let inrath = document.getElementById("inrath");
-            const perc = document.getElementById("inrPerc")
-            btcinr.innerText = "1 BTC = ₹" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("inrPerc");
+            btcinr.classList.remove("change");
+            if (btcinr.innerText !== "1 BTC = ₹" + data[0].current_price.toLocaleString()) {
+                btcinr.innerText = "1 BTC = ₹" + data[0].current_price.toLocaleString();
+                btcinr.classList.add("change");
+            };
             inrath.innerText = "ATH: ₹" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -483,8 +546,12 @@ async function update() {
         function updateContent() {
             const btcrub = document.getElementById("btcrub");
             let rubath = document.getElementById("rubath");
-            const perc = document.getElementById("rubPerc")
-            btcrub.innerText = "1 BTC = ₽" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("rubPerc");
+            btcrub.classList.remove("change");
+            if (btcrub.innerText !== "1 BTC = ₽" + data[0].current_price.toLocaleString()) {
+                btcrub.innerText = "1 BTC = ₽" + data[0].current_price.toLocaleString();
+                btcrub.classList.add("change");
+            };
             rubath.innerText = "ATH: ₽" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -512,8 +579,12 @@ async function update() {
         function updateContent() {
             const btczar = document.getElementById("btczar");
             let zarath = document.getElementById("zarath");
-            const perc = document.getElementById("zarPerc")
-            btczar.innerText = "1 BTC = R" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("zarPerc");
+            btczar.classList.remove("change");
+            if (btczar.innerText !== "1 BTC = R" + data[0].current_price.toLocaleString()) {
+                btczar.innerText = "1 BTC = R" + data[0].current_price.toLocaleString();
+                btczar.classList.add("change");
+            };
             zarath.innerText = "ATH: R" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -541,8 +612,12 @@ async function update() {
         function updateContent() {
             const btctry = document.getElementById("btctry");
             let tryath = document.getElementById("tryath");
-            const perc = document.getElementById("tryPerc")
-            btctry.innerText = "1 BTC = ₺" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("tryPerc");
+            btctry.classList.remove("change");
+            if (btctry.innerText !== "1 BTC = ₺" + data[0].current_price.toLocaleString()) {
+                btctry.innerText = "1 BTC = ₺" + data[0].current_price.toLocaleString();
+                btctry.classList.add("change");
+            };
             tryath.innerText = "ATH: ₺" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -570,8 +645,12 @@ async function update() {
         function updateContent() {
             const btcbrl = document.getElementById("btcbrl");
             let brlath = document.getElementById("brlath");
-            const perc = document.getElementById("brlPerc")
-            btcbrl.innerText = "1 BTC = R$" + data[0].current_price.toLocaleString();
+            const perc = document.getElementById("brlPerc");
+            btcbrl.classList.remove("change");
+            if (btcbrl.innerText !== "1 BTC = R$" + data[0].current_price.toLocaleString()) {
+                btcbrl.innerText = "1 BTC = R$" + data[0].current_price.toLocaleString();
+                btcbrl.classList.add("change");
+            };
             brlath.innerText = "ATH: R$" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -601,7 +680,11 @@ async function update() {
             const btctwd = document.getElementById("btctwd");
             let twdath = document.getElementById("twdath");
             const perc = document.getElementById("twdPerc")
-            btctwd.innerText = "1 BTC = NT$" + data[0].current_price.toLocaleString();
+            btctwd.classList.remove("change");
+            if (btctwd.innerText !== "1 BTC = NT$" + data[0].current_price.toLocaleString()) {
+                btctwd.innerText = "1 BTC = NT$" + data[0].current_price.toLocaleString();
+                btctwd.classList.add("change");
+            };
             twdath.innerText = "ATH: NT$" + data[0].ath.toLocaleString() + " on " + ndate;
             perc.innerText = "Difference from ATH: " + data[0].ath_change_percentage.toFixed(2) + "%";
             if (data[0].ath === data[0].high_24h) {
@@ -618,4 +701,6 @@ async function update() {
 
 };
 update();
-setInterval(update, 100000);
+setInterval(update, 30000);
+
+
