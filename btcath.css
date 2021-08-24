@@ -39,7 +39,10 @@ body {
   border-collapse: collapse;
   border-radius: 5px;
   font-size: larger;
-
+}
+.change {
+  animation-duration: 2s;
+  animation-name: fadediv;
 }
 #placeholder {
   grid-area: ph;
@@ -47,6 +50,10 @@ body {
 #usd {
   grid-area: usd;
 }
+/* #btcusd.change {
+    animation-duration: 2s;
+    animation-name: fadediv;
+} */
 #eur {
   grid-area: eur;
 }
@@ -133,4 +140,8 @@ body {
   font-size: large;
   font-weight: bold;
   color: #b02823;
+}
+@keyframes fadediv {
+  from {background-color: rgba(255, 255, 255, 0.666);}
+  to {background-color: #C7C4A1;}
 }
